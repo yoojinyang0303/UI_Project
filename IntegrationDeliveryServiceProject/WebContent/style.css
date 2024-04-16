@@ -7,9 +7,6 @@ body{
 }
 
 #project_container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
 	width:320px; 
 	height:568px; 
