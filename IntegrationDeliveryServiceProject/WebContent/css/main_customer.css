@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+#header {
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#contentsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: inherit;
+	height: 448px;
+}
+
+#searchContainer {
+	display: flex;
+	height: 34px;
+	margin-top: 15px;
+	margin-bottom: 21px;
+}
+
+#searchContainer > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+img {
+	width: 80%;
+}
+
+input {
+	width: 193px;
+	padding-left: 10px;
+	outline: unset;
+	border: unset;
+	border: 1px solid #000;
+}
+
+#categoryContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1;
+	gap: 5px 50px;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+.category-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.category-item img{
+	width: 39px;
+	height: 39px;
+	padding: 10px;
+	border: 1px solid #EFEFEF;
+	border-radius: 50%;
+}
+
+#searchContainer > div {
+	width: 34px;
+	background-color: #FFD94F;
+}
+
+/* 568-55-65 */
+#menuContainer {
+	display: flex;
+	justify-content: space-around;
+	width: inherit;
+	height: 65px;
+	padding-top: 15px;
+	border-radius: 0 0 17px 17px;
+	box-shadow: 0px -3px 10px rgba(0,0,0, 0.2);
+}
+
+#menuContainer img {
+	width: 40px;
+}
