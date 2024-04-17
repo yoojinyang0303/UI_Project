@@ -1,15 +1,31 @@
 @CHARSET "UTF-8";
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+
 
 body{
 	display: flex;
  	align-items: center;
  	min-height: 100vh;
+ 	color: #22333B;
+ 	font-size: 12px;
 }
 
 #project_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
 	width:320px; 
 	height:568px; 
 	border:2px solid black;
 	border-radius:20px;
 }
+
