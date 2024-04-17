@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+#top{
+	width: 100%;
+	height: 55px;
+	background-color: #FFD94F;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+p{
+	text-align: left;
+}
+form {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 300px;
+	gap: 18px;
+	font-size: 15px;
+	padding-right: 70px;
+}
+
+input{
+	padding: 2px 0;
+	padding-left: 10px;
+	border: 1px solid #F2F2F2;
+}
+
+input[type="button"]{
+	padding: 2px 8px;
+	background-color: #FFF7DA;
+	border: 0;
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	padding: 0;
+	margin-top: 5%;
+	width: 217px;
+	height: 29px;
+	border: 0;
+	outline: 0;
+	border-radius: 10px;
+	background-color: #FFD94F;
+	cursor: pointer;
+}
+
+label{
+	flex-wrap: no-wrap;
+	font-weight: 600;
+}
+
