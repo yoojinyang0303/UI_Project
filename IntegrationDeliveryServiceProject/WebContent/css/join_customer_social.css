@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+h1 {
+	margin: 0;
+	margin-bottom: 22px;
+	width: 100%;	
+	font-size: 30px;
+	text-align: center;
+}
+
+#project_container > p:nth-child(2) {
+	font-size: 12px;
+}
+
+#project_container > p:nth-child(4) {
+	letter-spacing: -0.7px;
+}
+
+#socialContainer {
+	width: 260px;
+	margin-top: 10px;
+	padding: 3px 16px 40px 16px;
+	border: 1px solid #606060;
+	border-radius: 5px;
+}
+
+#socialContainer > p {
+	margin-bottom: 26px;
+	font-size: 13px;
+	text-align: left;
+}
+
+h2 {
+	margin: 12px 0;
+	font-size: 15px;
+}
+
+#additionalInputs {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 17px;
+	font-weight: 600;
+}
+
+.default-address {
+	display: flex;
+	flex-wrap: no-wrap;
+	margin: -15px 0;
+	gap: 10px;
+}
+
+.default-address > label {
+	margin-top: 5px;
+}
+
+.bl_stack {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+.bl_stack--row {
+	flex-direction: row;
+}
+
+input {
+	width: 187px;
+	padding: 5px 0 5px 5px;
+	border: 1px solid #F2F2F2;
+}
+
+.el_input {
+	padding: 5px;
+	width: 100%;
+	height: 13px;
+	background-color: unset;
+	text-align: left;
+}
+
+.el_input::placeholder {
+	color: #d4d4d4;
+} 
+
+button {
+	width: 129px;
+	height: 40px;
+	padding: 8px 0;
+	font-size: 15px;
+	text-align: center;
+	outline: unset;
+	border: unset;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+.el_btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	outline: unset;
+	border: unset;
+	width: 110px;
+	height: 25px;
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 0;
+	word-break: keep-all;
+	background-color: #FFF7DA;	
+}
+
+
+.el_btn--outline {
+	background: unset;
+	background-color: #FFF7DA;
+}
+
+p {
+	font-size: 8px;
+	text-align: center;
+}
+
+#buttonContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 17px;
+	width: 290px;
+}
+
+#cancelBotton {
+	background-color: #D8D8D8;
+}
+
+#joinButton {
+	background-color: #FFD94F;
+}
