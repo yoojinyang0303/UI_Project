@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+#top{
+	width: 100%;
+	height: 55px;
+	background-color: #FFD94F;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 439px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#in{
+	width: 178px;
+	height: 51px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.lists{
+	width: 285px;
+	height: 198px;
+	border: 1px solid  #F2F2F2;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.detail{
+	margin-left:10px;
+	width: 160px;
+}
+
+.rname{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+img{
+	width: 59px;
+}
