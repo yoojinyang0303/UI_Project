@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+h1 {
+	margin-bottom: 47px;
+	width: 100%;	
+	font-size: 30px;
+	text-align: center;
+}
+
+/* 회원 유형 선택 */
+div > p {
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: 15px;
+}
+
+#user_type_container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+	width: 250px;
+}
+
+form {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 280px;
+	gap: 18px;
+	font-size: 15px;
+	padding-right: 30px;
+}
+
+input {
+	padding: 2px 0;
+	padding-left: 10px;
+	border: 1px solid #F2F2F2;
+}
+
+form > div {
+	display: flex;
+	flex-wrap: no-wrap;
+	font-weight: 600;
+}
+
+input[type="submit"] {
+	margin-right: 6%;
+	margin-top: 39px;
+	width: 217px;
+	height: 29px;
+	border: 0;
+	outline: 0;
+	border-radius: 10px;
+	background-color: #FFD94F;
+}
+
+#delivery_type_container{
+	font-size: 10px;
+	font-weight: 400;
+}
+
+#delivery_type_container > p{
+	font-size: 15px;
+	font-weight: 600;
+}

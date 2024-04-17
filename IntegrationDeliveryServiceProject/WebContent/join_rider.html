@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./css/join_rider.css">
+<meta charset="UTF-8">
+<title>통합 배달 서비스 프로젝트 : 회원가입_라이더</title>
+</head>
+<body>
+<div id="project_container">
+	<h1>회원가입</h1>
+	<div>
+		<p>회원 유형 선택<p>
+		<div id="user_type_container">
+			<label for="cus"><input type="radio" id="cus" name="usertype">고객</label>
+			<label for="res"><input type="radio" id="res" name="usertype">가게</label>
+			<label for="rid"><input type="radio" id="rid" name="usertype" checked="checked">라이더</label>
+		</div>
+	</div>
+	<form>
+		<div>
+			<label for="id">ID: </label>
+			<input id="id" placeholder="아이디 입력" required>
+		</div>
+		<div>
+			<label for="password">PW: </label>
+			<input id="password" type="password" placeholder="비밀번호 입력" required>
+		</div>
+		<div>
+			<label for="passwordcheck">PW 확인: </label>
+			<input id="passwordcheck" type="password" placeholder="비밀번호 재입력" required>
+		</div>
+		<div id="delivery_type_container">
+			<p>배달수단선택</p>
+			<label for="mbike"><input type="radio" id="mbike" name="deliverytype" checked="checked">오토바이</label>
+			<label for="car"><input type="radio" id="car" name="deliverytype">자동차</label>
+			<label for="bike"><input type="radio" id="bike" name="deliverytype">자전거</label>
+		</div>
+		<input type="submit" value="회원가입">
+	</form>
+	
+</div>
+</body>
+</html>
