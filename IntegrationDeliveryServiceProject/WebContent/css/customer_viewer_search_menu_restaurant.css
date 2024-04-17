@@ -12,10 +12,18 @@
  */
  
 #header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	width: inherit;
 	height: 55px;
 	border-radius: 17px 17px 0 0;
 	background-color: #FFD94F;
+}
+
+#header img {
+	width: 25px;
+	margin-left: 20px;
 }
 
 h2 {
@@ -73,6 +81,10 @@ h2 {
 	cursor: pointer;
 	border-radius: 10px;
 	border: 1px solid #F2F2F2;
+}
+
+#contentsContainer > div:hover {
+	border: 1px solid #FFD94F;
 }
 
 .restaurant-card img {
