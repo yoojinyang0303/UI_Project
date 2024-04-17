@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>통합 배달 서비스 프로젝트 : 회원가입</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./css/join_customer_social.css">
+</head>
+<body>
+<div id="project_container">
+	<h1>회원가입</h1>
+	<p>소셜 계정 회원가입은<br/>'고객' 회원만 가능합니다.</p>
+	<div id="socialContainer"> 
+		<h2>기본 정보</h2>
+		<p>이용자 고유 식별자</p>
+		<h2>추가 입력 정보</h2>
+		<div id="additionalInputs">
+			<div class="default-address">
+				<div style="text-align: right; margin-top: 17px;"><label  for="zoneCode">기본 배달 주소</label></div>
+				<div class="bl_stack bl_stack--row">
+					<!-- <input type="text" id="zonecode" class="el_input hp_txt-center" placeholder="" disabled> -->
+					<input id="roadAddress" class="el_input" type="text" placeholder="" disabled>
+					<button id="search-btn" class="el_btn el_btn--outline hp_shrink-0">
+						주소 검색
+					</button>
+				</div>
+				<!-- <input id="roadAddress" class="el_input" type="text" placeholder="" disabled> -->
+			</div>
+			<div class="default-address">
+				<label for="inputAddressDetail">상세주소 </label>
+				<input id="inputAddressDetail" placeholder="상세주소 입력" required>
+			</div>
+		</div>
+	</div>
+	<p>동의 후에는 해당 서비스의 이용약관 및 개인정보처리방침에 따라 정보가 관리됩니다.</p>
+	<div id="buttonContainer">
+		<button id="cancelButton">취소</button>
+		<button id="joinButton">가입하기</button>
+	</div>
+</div>
+</body>
+</html>
