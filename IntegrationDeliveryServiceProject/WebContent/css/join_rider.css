@@ -53,6 +53,7 @@ input[type="submit"] {
 	outline: 0;
 	border-radius: 10px;
 	background-color: #FFD94F;
+	cursor: pointer;
 }
 
 #delivery_type_container{
