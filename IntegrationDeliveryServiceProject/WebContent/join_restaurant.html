@@ -2,53 +2,55 @@
 <html>
 <head>
 <link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./css/join.css">
+<link rel="stylesheet" href="./css/join_restaurant.css">
 <meta charset="UTF-8">
 <title>통합 배달 서비스 프로젝트 : 회원가입_가게</title>
 </head>
 <body>
 <div id="project_container">
-<form>
-<h1>회원가입</h1>
-<h3>회원 유형 선택</h3>
-<div id="user_type_container">
-<label for="cus"><input type="radio" id="cus" name="usertype">고객</label>
-<label for="res"><input type="radio" id="res" name="usertype">가게</label>
-<label for="rid"><input type="radio" id="rid" name="usertype">라이더</label>
-</div>
-<table>
-	<tr>
-		<td align="right"><label>ID</label></td>
-		<td colspan="3"><input type="text" placeholder="아이디 입력"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>PW</label></td>
-		<td colspan="3"><input type="password" placeholder="비밀번호 입력"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>PW 확인</label></td>
-		<td colspan="3"><input type="password" placeholder="비밀번호 재입력"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>가게명</label></td>
-		<td colspan="3"><input type="text" placeholder="가게명 입력"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>가게주소</label></td>
-		<td><input size="10px" type="text" placeholder="주소 입력"></td>
-		<td><input type="button" value="주소검색"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>상세주소</label></td>
-		<td colspan="3"><input type="text" placeholder="상세주소 입력"></td>
-	</tr>
-	<tr>
-		<td align="right"><label>사업자번호</label></td>
-		<td colspan="3"><input type="text" placeholder="사업자번호 입력"></td>
-	</tr>
-</table>
-<input type="submit" value="회원가입">
-</form>
+	<h1>회원가입</h1>
+	<div>
+		<p>회원 유형 선택</p>
+		<div id="user_type_container">
+			<label for="cus"><input type="radio" id="cus" name="usertype">고객</label>
+			<label for="res"><input type="radio" id="res" name="usertype" checked="checked">가게</label>
+			<label for="rid"><input type="radio" id="rid" name="usertype">라이더</label>
+		</div>
+	</div>
+	<form>
+		<table>
+			<tr>
+				<td align="right"><label>ID: </label></td>
+				<td colspan="3"><input type="text" placeholder="아이디 입력"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>PW: </label></td>
+				<td colspan="3"><input type="password" placeholder="비밀번호 입력"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>PW 확인: </label></td>
+				<td colspan="3"><input type="password" placeholder="비밀번호 재입력"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>가게명: </label></td>
+				<td colspan="3"><input type="text" placeholder="가게명 입력"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>가게주소: </label></td>
+				<td><input size="10px" type="text" placeholder="주소 입력"></td>
+				<td><input type="button" value="주소검색"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>상세주소: </label></td>
+				<td colspan="3"><input type="text" placeholder="상세주소 입력"></td>
+			</tr>
+			<tr>
+				<td align="right"><label>사업자번호: </label></td>
+				<td colspan="3"><input type="text" placeholder="사업자번호 입력"></td>
+			</tr>
+		</table>
+		<input type="submit" value="회원가입">
+		</form>
 </div>
 </body>
 </html>

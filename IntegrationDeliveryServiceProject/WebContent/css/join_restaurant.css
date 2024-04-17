@@ -1,16 +1,40 @@
-form {
+h1 {
+	margin-bottom: 47px;
+	width: 100%;	
+	font-size: 30px;
 	text-align: center;
 }
+
+div > p {
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: 15px;
+}
+
+form {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 300px;
+	gap: 18px;
+	font-size: 15px;
+	padding-right: 70px;
+}
 input{
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding: 2px 0;
+	padding-left: 10px;
+	border: 1px solid #F2F2F2;
 }
 
 input[type="button"]{
+	padding: 0;
+	padding-left: 0;
 	background-color: #FFF7DA;
 	border: 0;
 }
 input[type="submit"] {
+	padding: 0;
 	margin-top: 5%;
 	width: 217px;
 	height: 29px;
@@ -19,10 +43,15 @@ input[type="submit"] {
 	border-radius: 10px;
 	background-color: #FFD94F;
 }
-input[type="radio"]{
-	margin-left: 10px;
-}
+
 #user_type_container{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 14px;
+	width: 250px;
+}
+
+td > label{
+	flex-wrap: no-wrap;
+	font-weight: 600;
 }
