@@ -1,8 +1,8 @@
 h1 {
+	margin-bottom: 47px;
 	width: 100%;	
 	font-size: 30px;
 	text-align: center;
-	border: 1px solid pink;
 }
 form {
 	display: flex;
@@ -10,8 +10,19 @@ form {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 220px;
-	gap: 10px;
-	border: 1px solid red;
+	gap: 13px;
+	font-size: 18px;
+}
+
+form > p {
+	margin: 0;
+}
+
+
+input {
+	padding: 2px 0;
+	padding-left: 10px;
+	border: 1px solid #F2F2F2;
 }
 
 input[type="submit"] {
@@ -24,13 +35,17 @@ input[type="submit"] {
 	background-color: #FFD94F;
 }
 
+#orTag {
+	margin-top: 43px;
+	font-size: 18px;
+}
+
 #socialLogoContainer {
 	display: flex;
-	border: 1px solid blue;
 	gap: 30px;
+	margin-bottom: 19px;
 }
 
 #socialLogoContainer img {
 	width: 50px;
-	border: 1px solid red;
 }
