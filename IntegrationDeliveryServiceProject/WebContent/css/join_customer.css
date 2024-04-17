@@ -95,6 +95,7 @@ form > div {
 	width: fit-content;
 	padding: 5px 10px;
 	font-size: 12px;
+	cursor: pointer;
 	word-break: keep-all;
 	background-color: #FFF7DA;	
 }
@@ -116,5 +117,6 @@ input[type="submit"] {
 	border: 0;
 	outline: 0;
 	border-radius: 10px;
+	cursor: pointer;
 	background-color: #FFD94F;
 }
