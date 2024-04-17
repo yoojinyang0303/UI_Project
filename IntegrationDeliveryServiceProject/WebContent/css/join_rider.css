@@ -26,7 +26,7 @@ form {
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 280px;
+	width: 300px;
 	gap: 18px;
 	font-size: 15px;
 	padding-right: 30px;
@@ -58,9 +58,14 @@ input[type="submit"] {
 #delivery_type_container{
 	font-size: 10px;
 	font-weight: 400;
+	margin-right:20px;
 }
 
 #delivery_type_container > p{
 	font-size: 15px;
 	font-weight: 600;
+}
+
+#license_container{
+	text-align: right;
 }
