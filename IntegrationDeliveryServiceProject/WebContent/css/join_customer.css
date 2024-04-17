@@ -41,8 +41,71 @@ form > p {
 	margin: 0;
 }
 
+form > div {
+	display: flex;
+	flex-wrap: no-wrap;
+	font-weight: 600;
+}
+
 #inputAddressLabel {
 	text-align: right;
+}
+
+.default-address {
+	display: flex;
+	flex-wrap: no-wrap;
+	margin: -18px 0;
+	gap: 10px;
+}
+
+.bl_stack {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+.bl_stack--row {
+	flex-direction: row;
+}
+
+.el_input {
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+	background-color: unset;
+	
+	text-align: left;
+}
+
+.el_input::placeholder {
+	color: #d4d4d4;
+}
+
+/* .el_input:disabled {
+	background-color: #f0f0f0;
+} */
+
+.el_btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	outline: unset;
+	border: unset;
+	width: fit-content;
+	padding: 5px 10px;
+	font-size: 12px;
+	word-break: keep-all;
+	background-color: #FFF7DA;	
+}
+
+.el_btn--outline {
+	background: unset;
+	background-color: #FFF7DA;
+}
+
+.hp_shrink-0 {
+	flex-shrink: 0;
 }
 
 input[type="submit"] {
