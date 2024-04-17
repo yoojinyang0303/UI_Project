@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>통합 배달 서비스 프로젝트 : 회원가입</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./css/join_customer.css">
+</head>
+<body>
+<div id="project_container">
+	<h1>회원가입</h1>
+	<div>
+		<p>회원 유형 선택</p>
+		<div id="user_type_container">
+			<label>
+				<input type="radio" name="userType" checked>
+				고객
+			</label>
+			<label>
+				<input type="radio" name="userType">
+				가게
+			</label>
+			<label>
+				<input type="radio" name="userType">
+				라이더
+			</label>
+		</div>
+	</div>
+	<form>
+		<p>
+			<label for="inputId">ID: </label>
+			<input id="inputId" placeholder="아이디 입력" required>
+		</p>
+		<p>
+			<label for="inputPW">PW: </label>
+			<input id="inputPW" type="password" placeholder="비밀번호 입력" required>
+		</p>
+		<p>
+			<label for="inputPW2">PW 확인: </label>
+			<input id="inputPW2" type="password" placeholder="비밀번호 재입력" required>
+		</p>
+		<p>
+			<label id="inputAddressLabel" for="inputAddress">기본 배달<br/>주소지: </label>
+			<input id="inputAddress" placeholder="주소 입력" required>
+		</p>
+		<p>
+			<label for="inputAddressDetail">상세주소: </label>
+			<input id="inputAddressDetail" placeholder="상세주소 입력" required>
+		</p>
+		<input type="submit" value="회원가입">
+	</form>
+</div>
+</body>
+</html>
