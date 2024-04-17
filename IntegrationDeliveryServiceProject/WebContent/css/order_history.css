@@ -9,6 +9,7 @@
 
 #content{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -25,11 +26,20 @@
 }
 
 .lists{
+	gap: 20px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
 	width: 285px;
 	height: 198px;
 	border: 1px solid  #F2F2F2;
 	border-radius: 10px;
 	margin-bottom: 15px;
+}
+
+.lists :nth-child(3){
+	border: 1px solid red;
+	margin-top: -20px;
 }
 
 .detail{
