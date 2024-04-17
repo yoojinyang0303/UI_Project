@@ -13,6 +13,7 @@ body{
 	display: flex;
  	align-items: center;
  	min-height: 100vh;
+ 	margin: 0;
  	color: #22333B;
  	font-size: 12px;
 }

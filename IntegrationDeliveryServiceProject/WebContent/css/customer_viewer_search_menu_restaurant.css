@@ -1,0 +1,96 @@
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+/* 
+568px;
+ */
+ 
+#header {
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+h2 {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+#searchContainer {
+	display: flex;
+	width: 237px;
+	height: 34px;
+	margin-bottom: 21px;
+}
+#searchContainer input {
+	width: 203px;
+}
+
+#searchContainer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	cursor: pointer;
+	background-color: #FFD94F;
+}
+
+#searchContainer img {
+	width: 80%;
+}
+
+#contentsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: inherit;
+	/* heigth: 513px; */
+	overflow-y: scroll;
+	gap: 10px;
+	border-radius: 0 0 20px 20px;
+}
+
+.restaurant-card {
+	display: flex;
+	/* flex-wrap: no-wrap; */
+	align-items: center;
+	width: 255px;
+	/* height: 103px; */
+	height: 70px;
+	/* padding: 20px 15px; */
+	padding: 10px 15px;
+	gap: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid #F2F2F2;
+}
+
+.restaurant-card img {
+	width: 59px;
+	height: 59px;
+}
+
+.restaurant-card > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.restaurant-card > div > p {
+	margin: 0;
+}
+
+.restaurant-card > div :first-child {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
