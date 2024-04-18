@@ -34,6 +34,7 @@
 	width: 290px;
 	height: 430px;
 	overflow-y: scroll;
+	-ms-overflow-style: none;
 }
 
 .content{
@@ -44,7 +45,10 @@
 	width: 285px;
 	height: 89px;
 	overflow: hidden;
-	
+}
+
+#container_in::-webkit-scrollbar{
+	display:none;
 }
 
 .content:hover{
