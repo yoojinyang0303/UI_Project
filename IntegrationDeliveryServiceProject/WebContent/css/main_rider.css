@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+/* 
+컬러
+
+테마 컬러: #FFD94F; 
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+/* 
+568px;
+ */
+ 
+#header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#header img {
+	width: 40px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+h2 {
+	margin: 0;
+	margin-top: 47px;
+	margin-bottom: 15px;
+	font-size: 22px;
+}
+
+#contentsContainer {
+	padding-bottom: 58px;
+}
+
+#menuContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	width: 272px;
+	height: 334px;
+	gap: 15px;
+}
+
+a {
+	border: 1px solid #f2f2f2;
+}
+
+a:nth-child(1) {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	border-radius: 10px;
+	background-image: url("../img/rider_main_order_request_list.jpeg");
+	background-size: 98% 95%;
+	background-repeat: no-repeat;
+}
+
+a:nth-child(2) {
+	border-radius: 10px;
+	background-image: url("../img/rider_main_order_info_list.jpeg");
+	/* background-size: cover; */
+	background-size: 100% 95%;
+	background-repeat: no-repeat;
+}
+
+a:nth-child(3) {
+	border-radius: 10px;
+	background-image: url("../img/rider_main_order_history_list.jpeg");
+	/* background-size: cover; */
+	background-size: 100% 95%;
+	background-repeat: no-repeat;
+}
