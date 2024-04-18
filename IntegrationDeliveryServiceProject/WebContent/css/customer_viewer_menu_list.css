@@ -1,7 +1,7 @@
 /* 
 컬러
 
-테마 컬러: #FFD94F;
+테마 컬러: #FFD94F; 
 기본 컬러: #FFF7DA;
 부정 컬러: #D8D8D8;
 텍스트 기본 컬러: #22333B;
@@ -32,6 +32,10 @@
 	overflow-y: scroll;
 }
 
+/* #contentsContainer > div:hover {
+	border: 1px solid #FFD94F;
+} */
+
 h2 {
 	margin: 0;
 	margin-top: 30px;
@@ -46,6 +50,12 @@ h2 {
 	overflow-y: scroll;
 } */
 
+#menuList {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
 .menu-item {
 	display: flex;
 	align-items: center;
@@ -54,6 +64,10 @@ h2 {
 	padding: 14px 18px;
 	border-radius: 10px;
 	border: 1px solid #F2F2F2;
+}
+
+.menu-item:hover {
+	border: 1px solid #FFD94F;
 }
 
 .menu-item > div {
@@ -70,4 +84,63 @@ h2 {
 .menu-item > img {
 	width: 81px;
 	height: 76px;
+}
+
+#menuServingContainer {
+	width: inherit;
+	height: 117px;
+	font-size: 15px;
+	border-radius: 0 0 17px 17px;
+	box-shadow: 0px -3px 10px rgba(0,0,0, 0.2);
+}
+
+#menuServingContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 78px;
+}
+
+button {
+	outline: unset;
+	border: unset;
+	width: 160px;
+	height: 39px;
+	cursor: pointer;
+	background-color: #FFD94F;
+}
+
+button:hover {
+	font-weight: 600;
+}
+
+#buttonContainer {
+	display: flex;
+}
+
+#cartOrderButton {
+	background-color: #FFF7DA;
+	border-radius: 0 0 0 17px;
+}
+
+#nowOrderButton {
+	border-radius: 0 0 17px 0;
+}
+
+#servingWrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+}
+
+#servingWrapper button {
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	border-radius: 50%;
+}
+
+#servingWrapper button:hover {
+	font-weight: 400;
+	box-shadow: 0px -3px 10px rgba(255,217,79, 0.5);
 }
