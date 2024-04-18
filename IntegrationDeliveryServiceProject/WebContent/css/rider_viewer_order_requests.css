@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+/* 
+컬러
+
+테마 컬러: #FFD94F; 
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+/* 
+568px;
+ */
+ 
+#header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#header img {
+	width: 25px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+#contentsContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 512px;
+}
+
+h2 {
+	margin: 0;
+	margin: 16px 0;
+	font-size: 22px;
+}
+
+#requestsList {
+	width: 265px;
+	/* height: 392px; */
+	height: 451px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+}
+
+#requestsList::-webkit-scrollbar {
+	display: none;
+}
+
+.request-item {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* width: 265px; */
+	width: 235px;
+	height: 71px;
+	padding: 10px 14px;
+	border-radius: 10px;
+	border: 1px solid #f2f2f2;
+}
+
+.request-item:hover {
+	cursor: pointer;
+	border: 1px solid #FFD94F; 
+}
+
+h3 {
+	width: 121px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.request-item :nth-child(3) {
+	margin-top: 15px;
+}
+
+h3 {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+p {
+	margin: 0;
+}
+
+.request-item p:nth-child(4) {
+/* 	display: flex;
+	justify-content: flex-start; */
+	width: 100px;
+	padding-left: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: right;
+	text-overflow: ellipsis;
+}
