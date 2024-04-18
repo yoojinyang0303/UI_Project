@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+
+/* 
+컬러
+
+테마 컬러: #FFD94F; 
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+/* 
+568px;
+ */
+ 
+#header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#header img {
+	width: 25px;
+	margin-left: 20px;
+}
+
+#header img:hover {
+	cursor: pointer;
+}
+
+#contentsContainer {
+	height: 415px;
+}
+
+h2 {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 35px;
+	font-size: 25px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 21px;
+	width: 280px;
+}
+
+form > label {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: right;
+}
+
+/**/
+.drop-button {
+	width: 180px;
+	height: 24px;
+	padding-left: 10px;
+	font-size: 15px;
+	border: 1px solid #f2f2f2;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.category-container {
+  position: relative;
+  display: inline-block;
+}
+
+.category-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  /* background-color: #f9f9f9; */
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #fff;
+}
+
+.category-list a {
+	display: block;
+	padding: 12px 0;
+	padding-right: 150px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #22333B;
+	text-decoration: none;
+}
+
+.category-list a:hover {
+	background-color: #f2f2f2;
+}
+
+.category-container:hover .category-list {
+  display: block;
+}
+
+.category-container:hover .drop-button {
+  background-color: #D8D8D8;
+}
+/**/
+
+input {
+	width: 190px;
+	outline: unset;
+	border: unset;
+	border: 1px solid #F2F2F2;
+	font-size: 15px;
+}
+
+input[type="submit"] {
+	outline: unset;
+	border: unset;
+	width: 129px;
+	height: 30px;
+	margin-top: 17px;
+	margin-right: 28%;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #FFD94F; 
+}
+
+inut:invalid {
+	border: 1px solid red;
+}
+
+input[type="submit"]:hover {
+	font-weight: 600;
+}

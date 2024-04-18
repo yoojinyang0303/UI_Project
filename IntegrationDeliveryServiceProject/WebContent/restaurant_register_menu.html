@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>통합 배달 서비스 프로젝트</title>
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/restaurant_register_menu.css">
+</head>
+<body>
+<div id="project_container">
+	<div id="header">
+		<img src="./img/back_arrow_white.svg" alt="이전"/>
+	</div>	
+	<h2>메뉴 등록</h2>
+	<div id="contentsContainer">	
+		<form>
+			<label>
+				카테고리
+				<div class="category-container">
+				  <!-- <button class="drop-button">카테고리 선택</button> -->
+				  <input class="drop-button" type="text" placeholder="카테고리 선택" value="">
+				  <div class="category-list">
+					  <a href="#">치킨</a>
+					  <a href="#">피자</a>
+					  <a href="#">양식</a>
+					  <a href="#">한식</a>
+					  <a href="#">일식</a>
+					  <a href="#">분식</a>
+					  <a href="#">중식</a>
+					  <a href="#">카페</a>
+				  </div>
+				</div>
+			</label>
+			<label>
+				메뉴명
+				<input required>
+			</label>
+			<label>
+				가격
+				<input type="text" required>
+			</label>
+			<input type="submit" value="등록">
+		</form>
+	</div>
+</div>
+</body>
+</html>
