@@ -7,10 +7,16 @@
 }
 
 #in{
+	display: flex;
+	justify-content: flex-end;
 	width: 305px;
 	height: 40px;
 	border-bottom: 1px solid black;
 	background-color: #FFD94F;
+}
+
+img{
+	width: 40px;
 }
 
 p{
