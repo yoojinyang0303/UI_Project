@@ -1,0 +1,73 @@
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+/* 
+568px;
+ */
+ 
+#header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: inherit;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#header img {
+	width: 25px;
+	margin-left: 20px;
+}
+
+#contentsContainer {
+	width: 284px;
+	height: 513px;
+	overflow-y: scroll;
+}
+
+h2 {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	text-align: left;
+}
+
+/* #menuList범위만 스크롤 하고 싶은데 잘 안됐음.
+일단 #contentsContainer는 잘 되니 패스하고 시간되면 다시 보기로 */
+/* #menuList {
+	overflow-y: scroll;
+} */
+
+.menu-item {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	height: 100px;
+	padding: 14px 18px;
+	border-radius: 10px;
+	border: 1px solid #F2F2F2;
+}
+
+.menu-item > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.menu-item > div > p:first-child {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.menu-item > img {
+	width: 81px;
+	height: 76px;
+}
