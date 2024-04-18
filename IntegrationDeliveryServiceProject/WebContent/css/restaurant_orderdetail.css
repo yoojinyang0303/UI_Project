@@ -9,6 +9,7 @@
 	justify-content: center;
 }
 #container_out div:first-child{
+	height: 20px;
 	display:flex;
 	justify-content:flex-end;
 	width: inherit;
@@ -20,6 +21,7 @@ img{
 }
 h2{
 	text-align: center;
+	margin:0;
 }
 
 #container_in{

@@ -1,0 +1,36 @@
+#top{
+	width: 100%;
+	height: 55px;
+	background-color: #FFD94F;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#top > img{
+	width: 25px;
+	margin-top: 15px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+h2{
+	font-size: 25px;
+}
+
+#content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 358px;
+	margin-bottom:80px;
+}
+
+p{
+	font-size: 20px;
+	width:178px;
+	height:51px;
+	text-align: center;
+	
+}
