@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+#header {
+	display: flex;
+	align-items: center;
+	/* width: inherit; */
+	width: 316px;
+	height: 55px;
+	border-radius: 17px 17px 0 0;
+	background-color: #FFD94F;
+}
+
+#header img {
+	width: 25px;
+	margin-left: 20px;
+}
+
+#header img:hover {
+	cursor: pointer;
+}
+
+h2 {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 17px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#contentsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 280px;
+	height: 433px;
+}
+
+#menuStatusHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 250px;
+	padding: 0 10px;
+	padding: 0 20px 0 10px;
+	font-size: 15px;
+}
+
+#menuList {
+	height: 328.5px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+}
+
+#menuList::-webkit-scrollbar {
+	display: none;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 8px 14px;
+	border-radius: 10px;
+	border: 1px solid #f2f2f2;
+}
+
+.menu-info {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 176px;
+}
+
+.menu-info p {
+	margin: 0;
+}
+
+.menu-info p:first-child {
+	margin-bottom: 6px;
+	width: inherit;
+	font-size: 14px;
+}
+
+.sale-status-toggle {
+	width: 60px;
+	height: 25px;
+}
+
+#flexSwitchCheckDefault {
+	width: 50px;
+	height: 25px;
+	border: 1px solid #FFD94F;
+	background-color: #FFD94F;
+}
+
+#flexSwitchCheckDefault:focus {
+	outline: 5px solid #FFF7DA;
+}
+
+button {
+	width: 129px;
+	height: 29px;
+	margin: 20px 0;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: unset;
+	border: unset;
+	background-color: #FFD94F;
+}
