@@ -5,9 +5,24 @@
 	background-color: #FFD94F;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
+	margin-bottom: 60px;
+}
+
+#top > img{
+	width: 25px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+#container{
+	height: 403px;
+	margin-top: 50px;
 }
 p{
-	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 50px;
 }
 form {
 	display: flex;
@@ -17,7 +32,10 @@ form {
 	width: 300px;
 	gap: 18px;
 	font-size: 15px;
-	padding-right: 70px;
+	padding-right: 40px;
+/* 	height: 403px; */
+	align-content: center;
+	margin-bottom: 50px;
 }
 
 input{
@@ -43,6 +61,7 @@ input[type="submit"] {
 	border-radius: 10px;
 	background-color: #FFD94F;
 	cursor: pointer;
+	margin-right: 20px;
 }
 
 label{
