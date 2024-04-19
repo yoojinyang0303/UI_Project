@@ -113,6 +113,7 @@ h2 {
 } */
 
 #menuServingContainer {
+	display: none;
 	width: inherit;
 	height: 117px;
 	font-size: 15px;
