@@ -16,16 +16,12 @@ https://devinus.tistory.com/50
 	<div>
 		<p>회원 유형 선택</p>
 		<div id="user_type_container">
-			<label>
-				<input type="radio" name="userType" checked>
+			<label for="userType">
+				<input id="customer" type="radio" name="userType" value="1" onclick="showJoinForm(this);">
 				고객
-			</label>
-			<label>
-				<input type="radio" name="userType">
+				<input id="restaurant" type="radio" name="userType" value="2" onclick="showJoinForm(this);">
 				가게
-			</label>
-			<label>
-				<input type="radio" name="userType">
+				<input id="rider" type="radio" name="userType" value="3" onclick="showJoinForm(this);">
 				라이더
 			</label>
 		</div>
@@ -53,7 +49,7 @@ https://devinus.tistory.com/50
 		</p>
 		<input type="submit" value="회원가입">
 	</form> -->
-	<form>
+	<form id="customerForm" class="form-container" name="frm" action="./login.html" onSubmit="joinUserForm();">
 		<div>
 			<label for="inputId">ID: </label>
 			<input id="inputId" placeholder="아이디 입력" required>
@@ -81,8 +77,113 @@ https://devinus.tistory.com/50
 			<label for="inputAddressDetail">상세주소: </label>
 			<input id="inputAddressDetail" placeholder="상세주소 입력" required>
 		</div>
+		<input type="submit" value="회원가입" >
+	</form>
+	
+	<!-- 가게 회원가입 양식 -->
+	<form id="restaurantForm" class="form-container" name="frm" action="./login.html" onSubmit="joinUserForm();">
+		<table>
+			<tr>
+				<td align="right"><label class="res-label">ID: </label></td>
+				<td><input type="text" placeholder="아이디 입력" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">PW: </label></td>
+				<td><input type="password" placeholder="비밀번호 입력" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">PW 확인: </label></td>
+				<td><input type="password" placeholder="비밀번호 재입력" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">가게명: </label></td>
+				<td><input type="text" placeholder="가게명 입력" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">가게주소: </label></td>
+				<td><input size="10px" type="text" placeholder="주소 입력" required><input id="resAddressBtn" type="button" value="주소검색"></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">상세주소: </label></td>
+				<td><input type="text" placeholder="상세주소 입력" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label class="res-label">사업자번호: </label></td>
+				<td><input type="text" placeholder="사업자번호 입력" required></td>
+			</tr>
+		</table>
+		<input type="submit" value="회원가입">
+	</form>
+		
+	<!-- 라이더 회원가입 양식 -->
+	<form id="riderForm" class="form-container" name="frm" action="./login.html" onSubmit="joinUserForm();">
+		<div>
+			<label for="inputId">ID: </label>
+			<input id="inputId" placeholder="아이디 입력" required>
+		</div>
+		<div>
+			<label for="password">PW: </label>
+			<input id="password" type="password" placeholder="비밀번호 입력" required>
+		</div>
+		<div>
+			<label for="passwordcheck">PW 확인: </label>
+			<input id="passwordcheck" type="password" placeholder="비밀번호 재입력" required>
+		</div>
+		<div id="delivery_type_container">
+			<p>배달수단선택</p>
+			<label for="mbike"><input type="radio" id="mbike" name="deliverytype" value="1" onclick="showLicenseForm();" checked="checked">오토바이</label>
+			<label for="car"><input type="radio" id="car" name="deliverytype" value="2" onclick="showLicenseForm();">자동차</label>
+			<label for="bike"><input type="radio" id="bike" name="deliverytype" value="3" onclick="hideLicenseForm();">자전거</label>
+		</div>
+		<div id="license_container">
+			<label for="license">운전면허증번호: </label>
+			<!-- <input id="license" placeholder="운전면허번호 입력" required> -->
+			<input id="license" placeholder="운전면허번호 입력">
+		</div>
 		<input type="submit" value="회원가입">
 	</form>
 </div>
+
+<script>
+// 회원 유형에 따른 회원가입 양식 출력
+function showJoinForm(type) {
+	var userType = document.querySelectorAll(".form-container");
+	console.log("length: " + userType.length); 
+	
+	for(var i=0; i<userType.length; i++) {
+		console.log("i: " + i);
+		
+		console.log("userType[i].id: " + userType[i].id);
+		if(type.id+"Form" === userType[i].id) {
+			console.log("if: " + userType[i].id);
+			userType[i].style.display = 'block';
+			userType[i].style.display = 'flex';
+		} else {
+			userType[i].style.display = 'none';
+		}
+	}
+}
+
+//회원 유형: 라이더 - 자전거 아닌 수단으로 가입하는 경우
+function showLicenseForm() {
+	document.getElementById('license_container').style.display = 'block';
+	document.getElementById('license_container').style.display = 'flex';
+	document.getElementById('license').required = true;
+}
+
+// 회원 유형: 라이더 - 자전거로 가입하는 경우
+function hideLicenseForm() {
+	console.log("자전거 -> 면허 숨기기");
+	document.getElementById('license_container').style.display = 'none';
+	document.getElementById('license').required = false;
+}
+
+// 회원가입 양식 제출
+function joinUserForm() {
+	console.log("회원가입 성공!");
+	alert("회원가입 성공!");
+	return;
+}
+</script>
 </body>
 </html>

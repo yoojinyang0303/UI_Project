@@ -15,14 +15,19 @@ div > p {
 }
 
 #user_type_container {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 14px;
 	width: 250px;
 }
 
-form {
+#user_type_container > label {
 	display: flex;
+	justify-content: space-between;
+	width: 250px;
+}
+
+form {
+	/* display: flex; */
+	display: none;
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
@@ -119,4 +124,44 @@ input[type="submit"] {
 	border-radius: 10px;
 	cursor: pointer;
 	background-color: #FFD94F;
+}
+
+/* 가게 회원가입 양식 */
+
+#restaurantForm {
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 300px;
+	gap: 18px;
+	font-size: 15px;
+	padding-right: 70px;
+}
+#resAddressBtn {
+	padding: 2px 8px;
+	background-color: #FFF7DA;
+	border: 0;
+	cursor: pointer;
+}
+
+.res-label {
+	flex-wrap: no-wrap;
+	font-weight: 600;
+}
+
+#riderForm {
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 300px;
+	gap: 18px;
+	font-size: 15px;
+	padding-right: 30px;
+}
+ 
+#delivery_type_container > label {
+	font-size: 10px;
+	font-weight: 400;
 }
