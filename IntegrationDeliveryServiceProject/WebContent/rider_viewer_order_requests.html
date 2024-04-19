@@ -5,11 +5,13 @@
 <title>통합 배달 서비스 프로젝트</title>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/rider_viewer_order_requests.css">
+<link rel="stylesheet" href="./css/rider_deliverydetail.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
 <div id="project_container">
 	<div id="header">
-		<img src="./img/back_arrow_white.svg" alt="이전 페이지"/>
+		<a href="./main_rider.html"><img src="./img/back_arrow_white.svg" alt="이전 페이지"/></a>
 	</div>	
 	<div id="contentsContainer">
 		<h2>배달 요청 목록</h2>
@@ -52,6 +54,60 @@
 			</div>
 		</div>
 	</div>
+	<div id="container_out">
+		<div>
+			<img id="close" src="img/x.png" alt="My Image">
+		</div>
+		<div>
+			<h2>주문상세정보</h2>
+		</div>
+		
+		<div id="container_in">
+			<p>주문번호:2404010002</p>
+			<p>가게명: BBQ가산디지털단지점</p>
+			<div id="table_container">
+				<table>
+					<tr>
+						<th>메뉴명</th>
+						<th>수량</th>
+						<th>금액</th>
+					</tr>
+					<tr>
+						<td>황금올리브치킨</td>
+						<td>1</td>
+						<td>20,000</td>
+					</tr>
+					<tr>
+						<td>BBQ모듬볼</td>
+						<td>1</td>
+						<td>6,000</td>
+					</tr>
+					<tr>
+						<td>제로 콜라 1.25L</td>
+						<td>1</td>
+						<td>2,500</td>
+					</tr>
+				</table>
+			</div>
+		<p id="price">총액: 20,000원</p>
+		</div>
+		<input id="approval" type="button" value="배달승인">
+	</div>
 </div>
 </body>
+<script type="text/javascript">
+	$(".request-item").click(function(){
+		console.log(1);
+		$("#container_out")[0].style.display="flex";
+		$("#container_out")[0].style.display="float";
+		$("#container_out")[0].style.position="absolute";
+	});
+	$("#close").click(function(){
+		$("#container_out")[0].style.display="none";
+	});
+	$("#approval").click(function(){
+		alert("배달이 승인되었습니다!");
+		$("#container_out")[0].style.display="none";
+	});
+</script>
 </html>

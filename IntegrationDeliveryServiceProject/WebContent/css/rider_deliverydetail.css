@@ -7,6 +7,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	display:none;
+	background-color: white;
 }
 #container_out div:first-child{
 	height: 20px;
@@ -14,12 +16,12 @@
 	justify-content:flex-end;
 	width: inherit;
 }
-img{
+#container_out img{
 	width:40px;
 	height: 40px;
 	cursor: pointer;
 }
-h2{
+#container_out h2{
 	text-align: center;
 	margin:0;
 }
@@ -28,10 +30,10 @@ h2{
 	width: 240px;
 	height: 330px;
 }
-p:first-child{
+#container_in p:first-child{
 	font-weight:600;
 }
-p:nth-child(2){
+#container_in p:nth-child(2){
 	font-weight:600;
 }
 #table_container{
@@ -98,7 +100,7 @@ p:nth-child(3){
 	margin-top:10px;
 }
 
-input{
+#container_out input{
 	width: 130px;
 	height: 31px;
 	background-color: #FFD94F;

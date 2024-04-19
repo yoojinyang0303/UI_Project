@@ -26,6 +26,7 @@
 	width: 25px;
 	margin-left: 20px;
 	cursor: pointer;
+	margin-top: 5px;
 }
 
 #contentsContainer {
@@ -35,7 +36,7 @@
 	height: 512px;
 }
 
-h2 {
+#contentsContainer h2 {
 	margin: 0;
 	margin: 16px 0;
 	font-size: 22px;
@@ -87,7 +88,7 @@ h3 {
 	font-weight: 600;
 }
 
-p {
+.request-item p {
 	margin: 0;
 }
 

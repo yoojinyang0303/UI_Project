@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/restaurant_orderlist.css">
+<link rel="stylesheet" href="./css/restaurant_orderdetail.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <title>통합 배달 서비스 프로젝트: 가게_주문요청목록조회</title>
 </head>
 <body>
 <div id="project_container">
 	<div id="top">
-		<img src="img/back_arrow_white.svg" alt="My Image">
+		<a href="./main_restaurant.html"><img src="img/back_arrow_white.svg" alt="My Image"></a>
 	</div>
 	<div id="container_out">
 		<p>주문 요청 목록</p>
@@ -65,6 +67,69 @@
 			</div>
 		</div>
 	</div>
+	<div id="container_out_detail">
+		<div>
+			<img id="close" src="img/x.png" alt="My Image">
+		</div>
+		<div>
+			<h2>주문상세정보</h2>
+		</div>
+		
+		<div id="container_in_detail">
+			<p>주문번호:2404010002</p>
+			<div id="table_container">
+				<table>
+					<tr>
+						<th>메뉴명</th>
+						<th>수량</th>
+						<th>금액</th>
+					</tr>
+					<tr>
+						<td>후라이드치킨</td>
+						<td>1</td>
+						<td>18,000</td>
+					</tr>
+					<tr>
+						<td>콜라 1.25L</td>
+						<td>1</td>
+						<td>2,000</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		<p><b>고객주소</b>: 서울특별시 가산디지털로 31길 25-13</p>
+		<p id="price">총액: 20,000원</p>
+		</div>
+		<input id="approval" type="button" value="주문승인">
+	</div>
 </div>
 </body>
+<script type="text/javascript">
+	$(".content").click(function(){
+		$("#container_out_detail")[0].style.display="flex";
+		$("#container_out_detail")[0].style.display="float";
+		$("#container_out_detail")[0].style.position="absolute";
+	});
+	$("#close").click(function(){
+		$("#container_out_detail")[0].style.display="none";
+	});
+	$("#approval").click(function(){
+		alert("주문이 승인되었습니다!");
+		$("#container_out_detail")[0].style.display="none";
+	});
+</script>
 </html>

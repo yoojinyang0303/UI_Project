@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/rider_deliveryingdetail.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <title>통합 배달 서비스 프로젝트: 라이더_진행중인배달상세정보</title>
 </head>
 <body>
 <div id="project_container">
 	<div id="top">
-		<img src="img/back_arrow_white.svg" alt="My Image">
+		<a href="./main_rider.html"><img src="./img/back_arrow_white.svg" alt="이전 페이지"/></a>
 	</div>
 	<div>
 		<h2>진행중인 배달 상세정보</h2>
@@ -48,4 +49,10 @@
 		<input type="button" value="배달완료">
 </div>
 </body>
+<script type="text/javascript">
+	$("input").click(function(){
+		alert("배달이 완료되었습니다!");
+		location.replace("./main_rider.html");
+	});
+</script>
 </html>

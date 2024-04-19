@@ -9,7 +9,7 @@
 	border-top-left-radius: 20px;
 }
 
-#top > img{
+#top img{
 	width: 40px;
 	margin-right: 10px;
 	cursor: pointer;
@@ -32,7 +32,7 @@ p{
     margin-top: 20px;
 }
 
-#container > img{
+#container img{
 	width: 132px;
 	height: 158px;
 	border: 2px solid #F2F2F2;

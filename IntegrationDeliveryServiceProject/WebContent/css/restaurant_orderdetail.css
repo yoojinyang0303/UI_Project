@@ -1,14 +1,15 @@
 @CHARSET "UTF-8";
-#container_out{
+#container_out_detail{
 	width: 277px;
 	height: 477px;
 	border: 2px solid black;
 	border-radius: 5px;
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	display:none;
+	background-color: white;
 }
-#container_out div:first-child{
+#container_out_detail div:first-child{
 	height: 20px;
 	display:flex;
 	justify-content:flex-end;
@@ -24,11 +25,11 @@ h2{
 	margin:0;
 }
 
-#container_in{
+#container_in_detail{
 	width: 240px;
 	height: 330px;
 }
-p:first-child{
+#container_out_detail p:first-child{
 	font-weight:600;	
 }
 #table_container{
