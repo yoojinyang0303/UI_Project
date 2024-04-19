@@ -1,9 +1,10 @@
 @CHARSET "UTF-8";
 #out{
+	display:none;
 	width: 305px;
 	height: 134px;
 	border: 1px solid black;
-	
+	background-color: #FFD94F;
 }
 
 #in{

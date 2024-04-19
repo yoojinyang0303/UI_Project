@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/join_restaurant.css">
 <meta charset="UTF-8">
@@ -56,5 +57,13 @@
 		<input type="submit" value="회원가입">
 		</form>
 </div>
+<script type="text/javascript">
+	eventHandling = function(){
+		console.log($(this).text());
+	}
+	//document.querySelector("h1").addEventListener("click", eventHandling);
+	
+	$("h2").click(eventHandling);
+</script>
 </body>
 </html>

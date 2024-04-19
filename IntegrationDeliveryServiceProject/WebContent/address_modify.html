@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/address_modify.css">
+<link rel="stylesheet" href="./css/order_complete.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <title>통합 배달 서비스 프로젝트 : 주소지 수정</title>
 </head>
 <body>
 <div id="project_container">
 	<div id="top">
-		<img src="img/back_arrow_white.svg" alt="My Image">
+		<a href="./main_customer.html"><img src="img/back_arrow_white.svg" alt="My Image"></a>
 	</div>
 	<div id="container">
 		<p>배달 주소지 수정</p>
@@ -25,6 +27,36 @@
 			<input type="submit" value="수정">
 		</form>
 	</div>
+	<div id="out">
+		<div id="in">
+			<img id="close" src="img/x.png" alt="My Image">
+		</div>
+		<p>수정이 완료되었습니다!</p>
+	</div>
+	<div id="address_modal">
+		<img id="address_modal_close" src="img/x.png" alt="My Image">
+		주소검색창입니다.
+	</div>
 </div>
+
+<script type="text/javascript">
+
+	$("input:button").click(function(){
+		$("#address_modal")[0].style.display="block";
+		$("#address_modal")[0].style.display="float";
+		$("#address_modal")[0].style.position="absolute";
+	});
+	$("input:submit").click(function(){
+		$("#out")[0].style.display="block";
+		$("#out")[0].style.display="float";
+		$("#out")[0].style.position="absolute";
+	});
+	$("#close").click(function(){
+		$("#out")[0].style.display="none";
+	});
+	$("#address_modal_close").click(function(){
+		$("#address_modal")[0].style.display="none";
+	});
+</script>
 </body>
 </html>
