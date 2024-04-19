@@ -1,3 +1,14 @@
+/* 
+컬러
+
+테마 컬러: #FFD94F;
+기본 컬러: #FFF7DA;
+부정 컬러: #D8D8D8;
+텍스트 기본 컬러: #22333B;
+ */
+ 
+
+
 h1 {
 	margin-bottom: 47px;
 	width: 100%;	
@@ -47,6 +58,91 @@ input[type="submit"] {
 	margin-bottom: 19px;
 }
 
-#socialLogoContainer img {
+/* #socialLogoContainer img {
 	width: 50px;
+} */
+
+#googleLogin {
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/googleLogo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: unset;
+	border: unset;
+	border-radius: 50%;
+}
+
+#kakaoLogin {
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/kakaoTalkLogo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	outline: unset;
+	border: unset;
+	border-radius: 50%;
+}
+
+#naverLogin {
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/naverLogo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: unset;
+	border: unset;
+	border-radius: 50%;
+}
+
+#googlePopup {
+	display: none;
+	border: 1px solid #000;
+	width: 280px;
+	height: 300px;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: #fff;
+}
+
+#kakaoPopup {
+	display: none;
+	border: 1px solid #000;
+	width: 280px;
+	height: 300px;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: #fff;
+}
+
+#naverPopup {
+	display: none;
+	border: 1px solid #000;
+	width: 280px;
+	height: 300px;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: #fff;
+}
+
+.popupHeader {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 30px;
+	border-radius: 10px 10px 0 0;
+	background-color: #FFD94F;
+}
+
+.popupHeader button {
+	width: 25px;
+	height: 25px;
+	outline: unset;
+	border: unset;
+	margin-right: 10px;
+	cursor:pointer;
+	background-image: url("../img/x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: transparent;
 }
