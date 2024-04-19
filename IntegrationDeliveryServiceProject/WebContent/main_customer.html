@@ -20,65 +20,67 @@
 		</div>
 		<div id="categoryContainer">
 			<div class="category-item">
-				<img src="./img/category-chicken.png" alt="치킨"/>
+				<img name="치킨" src="./img/category-chicken.png" alt="치킨"/>
 				치킨
 			</div>
 			<div class="category-item">
-				<img src="./img/category-pizza.png" alt="피자"/>
+				<img name="피자" src="./img/category-pizza.png" alt="피자"/>
 				피자
 			</div>
 			<div class="category-item">
-				<img src="./img/category-italian.png" alt="양식"/>
+				<img name="양식" src="./img/category-italian.png" alt="양식"/>
 				양식
 			</div>
 			<div class="category-item">
-				<img src="./img/category-korean.png" alt="한식"/>
+				<img name="한식" src="./img/category-korean.png" alt="한식"/>
 				한식
 			</div>
 			<div class="category-item">
-				<img src="./img/category-japanese.png" alt="일식"/>
+				<img name="일식" src="./img/category-japanese.png" alt="일식"/>
 				일식
 			</div>
 			<div class="category-item">
-				<img src="./img/category-tteobokki.png" alt="분식"/>
+				<img name="분식" src="./img/category-tteobokki.png" alt="분식"/>
 				분식
 			</div>
 			<div class="category-item">
-				<img src="./img/category-chinese.png" alt="중식"/>
+				<img name="중식" src="./img/category-chinese.png" alt="중식"/>
 				중식
 			</div>
 			<div class="category-item">
-				<img src="./img/category-cafe.png" alt="카페"/>
+				<img name="카페" src="./img/category-cafe.png" alt="카페"/>
 				카페
 			</div>
 		</div>
 	</div>
 	<div id="menuContainer">
-		<a href="#"><img src="./img/search-black.svg" alt="검색 페이지" /></a>
-		<a href="#"><img src="./img/orderHistory.svg" alt="주문내역 조회 페이지" /></a>
-		<a href="#"><img src="./img/updateAddress.svg" alt="주소 수정 페이지" /></a>
-		<a href="#"><img src="./img/logout.svg" alt="로그아웃" /></a>
+		<a href="#"><img id="search" src="./img/search-black.svg" alt="검색 페이지" /></a>
+		<a href="#"><img id="orderlist" src="./img/orderHistory.svg" alt="주문내역 조회 페이지" /></a>
+		<a href="#"><img id="modifyaddress" src="./img/updateAddress.svg" alt="주소 수정 페이지" /></a>
+		<a href="#"><img id="logout" src="./img/logout.svg" alt="로그아웃" /></a>
 	</div>
 </div>
 </body>
 <script type="text/javascript">
 	$("#searchContainer img").click(function(){
-		alert($("#searchContainer input").val()+"검색");
-		location.replace("./customer_viewer_menu_list.html");
+		alert($("#searchContainer input").val()+" 검색");
+		location.replace("./customer_viewer_search_menu_restaurant.html");
 	});
-	$(".category-list a").click(function(){
-		console.log(1);
-		$(".category-list")[0].style.display="none";
+	$(".category-item img").click(function(){
+		alert($(this).attr("name") +" 검색");
+		location.replace("./customer_viewer_search_menu_restaurant.html");
 	});
-	$(".drop-button").mouseover(function(){
-		$(".category-list")[0].style.display="block";
+	$("#search").click(function(){
+		location.replace("./customer_viewer_search_menu_restaurant.html");
 	});
-	$(".category-list").mouseleave(function(){
-		$(".category-list")[0].style.display="none";
+	$("#orderlist").click(function(){
+		location.replace("./order_history_nothing.html");
 	});
-	$("input[type=submit]").click(function(){
-		alert("메뉴등록이 완료되었습니다!");
-		location.replace("./main_restaurant.html");
+	$("#modifyaddress").click(function(){
+		location.replace("./address_modify.html");
+	});
+	$("#logout").click(function(){
+		location.replace("./login.html");
 	});
 </script>
 </html>
