@@ -5,6 +5,8 @@
 <title>통합 배달 서비스 프로젝트</title>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/restaurant_register_menu.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 </head>
 <body>
 <div id="project_container">
@@ -18,7 +20,7 @@
 				카테고리
 				<div class="category-container">
 				  <!-- <button class="drop-button">카테고리 선택</button> -->
-				  <input class="drop-button" type="text" placeholder="카테고리 선택" value="">
+				  <input class="drop-button" type="text" placeholder="카테고리 선택">
 				  <div class="category-list">
 					  <a href="#">치킨</a>
 					  <a href="#">피자</a>
@@ -44,4 +46,24 @@
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+	$(".category-list a").click(function(){
+		console.log(this.text);
+		$(".drop-button").val(this.text);
+	});
+	$(".category-list a").click(function(){
+		console.log(1);
+		$(".category-list")[0].style.display="none";
+	});
+	$(".drop-button").mouseover(function(){
+		$(".category-list")[0].style.display="block";
+	});
+	$(".category-list").mouseleave(function(){
+		$(".category-list")[0].style.display="none";
+	});
+	$("input[type=submit]").click(function(){
+		alert("메뉴등록이 완료되었습니다!");
+		location.replace("./main_restaurant.html");
+	});
+</script>
 </html>

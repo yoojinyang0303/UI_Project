@@ -5,6 +5,8 @@
 <title>통합 배달 서비스 프로젝트</title>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/main_customer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 </head>
 <body>
 <div id="project_container">
@@ -59,4 +61,24 @@
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+	$("#searchContainer img").click(function(){
+		alert($("#searchContainer input").val()+"검색");
+		location.replace("./customer_viewer_menu_list.html");
+	});
+	$(".category-list a").click(function(){
+		console.log(1);
+		$(".category-list")[0].style.display="none";
+	});
+	$(".drop-button").mouseover(function(){
+		$(".category-list")[0].style.display="block";
+	});
+	$(".category-list").mouseleave(function(){
+		$(".category-list")[0].style.display="none";
+	});
+	$("input[type=submit]").click(function(){
+		alert("메뉴등록이 완료되었습니다!");
+		location.replace("./main_restaurant.html");
+	});
+</script>
 </html>
