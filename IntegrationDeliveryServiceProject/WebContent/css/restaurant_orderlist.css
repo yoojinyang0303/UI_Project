@@ -45,6 +45,7 @@
 	width: 285px;
 	height: 89px;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 #container_in::-webkit-scrollbar{

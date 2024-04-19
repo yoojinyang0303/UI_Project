@@ -12,6 +12,7 @@
 #top > img{
 	width: 40px;
 	margin-right: 10px;
+	cursor: pointer;
 }
 
 p{
@@ -36,4 +37,5 @@ p{
 	height: 158px;
 	border: 2px solid #F2F2F2;
 	border-radius: 10px;
+	cursor: pointer;
 }
