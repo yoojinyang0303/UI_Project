@@ -48,12 +48,14 @@ function loginForm() {
 			<button class="popup-close-btn"></button>
 		</div>
 		카카오 소셜 로그인 팝업
+		<button id="kakaoLoginBtn">로그인</button>
 	</div>
 	<div id="naverPopup">
 		<div class="popupHeader">
 			<button class="popup-close-btn"></button>
 		</div>
 		네이버 소셜 로그인 팝업
+		<button id="naverLoginBtn">로그인</button>
 	</div>
 </div>
 <script>
@@ -77,12 +79,24 @@ kakaoPopup.addEventListener('click', function() {
 	document.getElementById('kakaoPopup').style.position = 'absolute';
 });
 
+const socialLoginSuccess = document.getElementById('kakaoLoginBtn');
+socialLoginSuccess.addEventListener('click', function() {
+	alert("소셜 로그인 성공");
+	location.replace("./main_customer.html");
+});
+
 //네이버 로그인 팝업 열기
 naverPopup.addEventListener('click', function() {
 	console.log("네이버 소셜 로그인 팝업");
 	document.getElementById('naverPopup').style.display = 'block';
 	document.getElementById('naverPopup').style.display = 'float';
 	document.getElementById('naverPopup').style.position = 'absolute';
+});
+
+const socialLoginFail = document.getElementById('naverLoginBtn');
+socialLoginFail.addEventListener('click', function() {
+	alert("가입된 소셜 계정이 없습니다. 회원가입 페이지로 이동합니다 :)");
+	location.replace("./join_customer_social.html");
 });
 
 const popupCloseBtn = document.querySelectorAll('.popup-close-btn');

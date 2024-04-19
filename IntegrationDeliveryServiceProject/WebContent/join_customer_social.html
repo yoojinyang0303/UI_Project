@@ -38,5 +38,24 @@
 		<button id="joinButton">가입하기</button>
 	</div>
 </div>
+
+<script>
+const cancelBtn = document.getElementById('cancelButton');
+
+cancelBtn.addEventListener('click', function() {
+	alert("서비스 초기화면으로 이동합니다.");
+	location.replace("./login.html");
+});
+
+const joinBtn = document.getElementById('joinButton');
+
+joinBtn.addEventListener('click', function() {
+	const inputDetailAddress = document.getElementById('inputAddressDetail');
+	if(inputDetailAddress != "") {
+		alert("회원가입 성공!");
+		location.replace("./login.html");
+	}
+});
+</script>
 </body>
 </html>
